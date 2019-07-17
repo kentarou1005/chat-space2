@@ -1,0 +1,14 @@
+&__top{
+  background-color: #253141;
+  height: 100px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  &-user-info {
+    height: 23px;
+    width: calc(300px - 40px);
+    @import "top/name";
+    @import "top/edit";
+    @import "top/gear";
+  }
+}

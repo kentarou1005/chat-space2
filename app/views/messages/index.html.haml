@@ -1,0 +1,57 @@
+.contents
+  .contents__header
+    グループを作成しました。
+  .contents__left
+    .contents__left__top
+      .contents__left__top-user-info
+        .contents__left__top-user-info-name
+          kentaro
+        .contents__left__top-user-info-gear
+        =link_to "", class: "contents__left__top-user-info-gear" do
+          = fa_icon 'cog'
+        .contents__left__top-user-info-edit
+        =link_to "", class: "contents__left__top-user-info-edit" do
+          = fa_icon 'edit'
+    .contents__left__bottom
+      .contents__left__bottom__group_name
+        tech
+      .contents__left__bottom__new_chat
+        new chat
+
+  .contents__right
+    .contents__right__top
+      .contents__right__top-left
+        .contents__right__top-left-group-name
+          tech
+        .contents__right__top-left-member
+          Member：
+          .contents__right__top-left-member-name
+            kentaro
+      =link_to "", class: "" do
+        .contents__right__top-edit
+          edit
+    .contents__right__chat-space
+      .contents__right__chat-space-user-chat
+        .contents__right__chat-space-user-chat-name
+          kentaro
+        .contents__right__chat-space-user-chat-time
+          2019/10/5(sat) 10:05:00
+        .contents__right__chat-space-user-chat-chat
+          こんにちは
+      .contents__right__chat-space-member-chat
+        .contents__right__chat-space-member-chat-name
+          kentaro
+        .contents__right__chat-space-member-chat-time
+          2019/10/5(sat) 10:05:00
+        .contents__right__chat-space-member-chat-chat
+          こんにちは
+    .contents__right__bottom
+      .contents__right__bottom-box
+        .contents__right__bottom-box-text
+          type a message
+          .contents__right__bottom-box-text-icon
+            %label
+              = fa_icon 'image'
+              = file_field :image, :fine_name ,class: "contents__right__bottom-box-text-icon-select" 
+        .contents__right__bottom-box-text-send
+          Send
