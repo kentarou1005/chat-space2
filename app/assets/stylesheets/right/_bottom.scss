@@ -1,0 +1,42 @@
+&__bottom {
+  background-color: #ddd;
+  height: 50px;
+  width: calc(100wv - 100px);
+  padding: 20px 40px;
+  &-box {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    line-height: 50px;
+    &-text {
+      background-color: #fafafa;
+      height: 50px;
+      width:100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 16px;
+      color: #434A54;
+      &-icon {
+        float: right;
+        position: relative;
+        display: inline-block;
+        font-size: 1.3rem;
+        color: black;
+        &-select {
+          display: none;
+        }
+      }
+    }
+      &-text-send {
+          background-color: #38AEF0;
+          height: 50px;
+          width: 95px;
+          margin-left: 15px;
+          padding: 0 10px;
+          color: white;
+          text-align: center;
+      }
+  }  
+}
+
+

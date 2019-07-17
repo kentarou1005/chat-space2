@@ -1,0 +1,17 @@
+&__top {
+  background-color: #fafafa;
+  height: 100px;
+  width: calc(100wv - 100px);
+  padding: 0 40px;
+  border-bottom: solid 1px #eeeeee;
+  &-left {
+    margin-top: 35px;
+    position: absolute;
+    @import "top/group-name";
+    @import "top/member";
+  }
+  @import "top/edit";
+
+}
+
+

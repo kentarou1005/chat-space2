@@ -1,0 +1,23 @@
+&-user-chat {
+  width: 100%;
+  margin-bottom: 40px;
+  float: left;
+  &-chat {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    margin-top: 10px;
+    }
+  &-name{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &-time{
+    font-size: 12px;
+    color: #999999;
+    margin-left: 5px;
+    display: inline-block;
+
+  }
+}

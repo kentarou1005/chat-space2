@@ -1,0 +1,10 @@
+&-icon {
+  float: right;
+  position: relative;
+  display: inline-block;
+  font-size: 1.3rem;
+  color: black;
+  &-select {
+    display: none;
+  }
+}
