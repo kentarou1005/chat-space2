@@ -1,22 +1,8 @@
 .contents
-  .contents__header
-    グループを作成しました。
+  -# .contents__header
+    -# グループを作成しました。
   .contents__left
-    .contents__left__top
-      .contents__left__top-user-info
-        .contents__left__top-user-info-name
-          kentaro
-        .contents__left__top-user-info-gear
-        =link_to "", class: "contents__left__top-user-info-gear" do
-          = fa_icon 'cog'
-        .contents__left__top-user-info-edit
-        =link_to "", class: "contents__left__top-user-info-edit" do
-          = fa_icon 'edit'
-    .contents__left__bottom
-      .contents__left__bottom__group_name
-        tech
-      .contents__left__bottom__new_chat
-        new chat
+    = render 'devise/shared/side_bar'
 
   .contents__right
     .contents__right__top

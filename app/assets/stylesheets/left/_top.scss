@@ -1,14 +1,14 @@
-&__top{
+.header {
   background-color: #253141;
   height: 100px;
   padding: 0 20px;
   display: flex;
   align-items: center;
   &-user-info {
+    color: white;
     height: 23px;
     width: calc(300px - 40px);
     @import "top/name";
-    @import "top/edit";
-    @import "top/gear";
+    @import "top/lists";
   }
 }
