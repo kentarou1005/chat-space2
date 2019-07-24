@@ -68,3 +68,5 @@ gem "haml-rails", "~> 2.0"
 gem 'devise'
 
 gem 'pry'
+
+gem 'erb2haml'
