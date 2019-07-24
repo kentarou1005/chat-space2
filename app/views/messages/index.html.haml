@@ -1,6 +1,4 @@
 .contents
-  -# .contents__header
-    -# グループを作成しました。
   .contents__left
     = render 'devise/shared/side_bar'
 
@@ -15,7 +13,8 @@
             kentaro
       =link_to "", class: "" do
         .contents__right__top-edit
-          edit
+          = link_to edit_user_path(current_user) do
+            edit
     .contents__right__chat-space
       .contents__right__chat-space-user-chat
         .contents__right__chat-space-user-chat-name
