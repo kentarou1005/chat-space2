@@ -25,3 +25,9 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+app/models/message.rb
+app/uploaders/image_uploader.rb
+Gemfile
+Gemfile.lock
+app/models/message.rb
+*.rb
