@@ -1,6 +1,7 @@
 .chat {
   width: calc(100% - 300px);
   float: right;
+  height: 100vh;
   .header {
     box-sizing: border-box;
     height: 100px;
@@ -73,6 +74,7 @@
     box-sizing: border-box;
     height: 90px;
     padding: 20px 50px 20px 40px;
+    bottom: 0;
     &__message {
       border: none;
       float: left;
