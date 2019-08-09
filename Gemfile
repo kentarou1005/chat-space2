@@ -83,4 +83,4 @@ group :test, :development do
   gem 'capybara'
 end
 
-
+gem 'jquery-rails'
