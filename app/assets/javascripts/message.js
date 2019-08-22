@@ -1,29 +1,7 @@
 $(document).on('turbolinks:load', function() {
 
-  function buildMessage(message){
-    var img = message.image ? `<img src= ${ message.image }>` : "";
-    var html = `<div class="message">
-                  <div class="upper-message">
-                    <div class="upper-message__user-name">
-                      ${message.user_name}
-                    </div>
-                    <div class="upper-message__date">
-                      ${message.created_at}
-                    </div>
-                  </div>
-                    <div class="lower-message">
-                      <p class="lower-message__content">
-                        ${message.content}
-                        ${img}
-                      </p>
-                    </div>
-                </div>`
-    return html;
-  }
-
   function buildMessageHTML(message) {
-      // var img = message.image ? `<img src= ${ message.image }>` : "";
-    if (message.content && message.image.url) {
+    if (message.content && message.image) {
       //data-idが反映されるようにしている
       var html = 
         `<div class="message" data-id= ${message.id} > 
@@ -94,7 +72,8 @@ $(document).on('turbolinks:load', function() {
       contentType: false,
     })
     .done(function(message){
-      var html = buildMessage(message);
+      // var html = buildMessage(message);
+      var html = buildMessageHTML(message);
       $(".messages").append(html);
       $("form")[0].reset();
       $(".messages").animate({scrollTop: $(".message").last().offset().top + $('.messages').scrollTop()}, 500, "swing");
