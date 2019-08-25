@@ -51,7 +51,8 @@ production:
   <<: *default
   database: chat-space2_production
   username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
+  # password: <%= ENV['DATABASE_PASSWORD'] %>
+  password: khkh1005
   socket: /var/lib/mysql/mysql.sock
 
   # username: chat-space2
