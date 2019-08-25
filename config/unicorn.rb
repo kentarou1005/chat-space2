@@ -12,7 +12,7 @@ stderr_path "#{app_path}/shared/log/unicorn.stderr.log"
 stdout_path "#{app_path}/shared/log/unicorn.stdout.log"
 
 #アプリケーションの設置されているディレクトリを指定
-working_directory app_path
+# working_directory app_path
 
 #Unicornの起動に必要なファイルの設置場所を指定
 pid "#{app_path}/tmp/pids/unicorn.pid"
