@@ -33,4 +33,4 @@ app/models/message.rb
 
 public/uploads/
 
-# config/secrets.yml
+config/secrets.yml
