@@ -32,3 +32,5 @@ Gemfile.lock
 app/models/message.rb
 
 public/uploads/
+
+# config/secrets.yml
