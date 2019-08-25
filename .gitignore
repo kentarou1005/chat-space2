@@ -30,6 +30,5 @@ app/uploaders/image_uploader.rb
 Gemfile
 Gemfile.lock
 app/models/message.rb
-*.rb
 
 public/uploads/
