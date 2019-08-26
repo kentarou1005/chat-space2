@@ -38,7 +38,7 @@ $(document).on('turbolinks:load', function() {
       processData: false,
       contentType: false,
     })
-    
+
     .done(function(message){
       var html = buildMessageHTML(message);
       $(".messages").append(html);
@@ -48,7 +48,7 @@ $(document).on('turbolinks:load', function() {
     .fail(function(){
       alert('error2');
     });
-    return false;
+    // return false;
   });
 
   var reloadMessages = function(){
