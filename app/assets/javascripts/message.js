@@ -66,7 +66,7 @@ $(document).on('turbolinks:load', function() {
                 insertHTML = buildMessageHTML(message); 
                 $('.messages').append(insertHTML);
                     });
-                $(".form")[0].reset();
+                $(".form__submit")[0].reset();
                 $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, "fast");
             }
             else{
