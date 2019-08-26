@@ -38,6 +38,7 @@ $(document).on('turbolinks:load', function() {
       processData: false,
       contentType: false,
     })
+    
     .done(function(message){
       var html = buildMessageHTML(message);
       $(".messages").append(html);
