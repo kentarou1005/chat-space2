@@ -48,7 +48,7 @@ $(document).on('turbolinks:load', function() {
     .fail(function(){
       alert('error2');
     });
-    // return false;
+    return false;
   });
 
   var reloadMessages = function(){
@@ -68,6 +68,7 @@ $(document).on('turbolinks:load', function() {
                     });
                 $("form")[0].reset();
                 $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, "fast");
+                "disabled", false
             }
             else{
             }
