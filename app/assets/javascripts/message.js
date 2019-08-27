@@ -40,8 +40,9 @@ $(document).on('turbolinks:load', function() {
     })
 
     .done(function(message){
-      if(message == ""){
-        $(".form__submit").attr("disabled", true);
+      if(message == "")
+      {
+        alert('error2');
       }
       else {
         var html = buildMessageHTML(message);
