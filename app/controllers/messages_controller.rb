@@ -11,6 +11,7 @@ class MessagesController < ApplicationController
   end
 
   def create
+    console.log(222)
     @message = @group.messages.new(message_params)
     if @message.save
       respond_to do |format|
