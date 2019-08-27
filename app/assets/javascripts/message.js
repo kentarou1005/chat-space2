@@ -45,7 +45,7 @@ $(document).on('turbolinks:load', function() {
         alert('error');
       }
       else {
-        console.log(else);
+        console.log(111);
         var html = buildMessageHTML(message);
         $(".messages").append(html);
         $("form")[0].reset();
