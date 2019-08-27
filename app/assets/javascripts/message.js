@@ -25,7 +25,7 @@ $(document).on('turbolinks:load', function() {
     return html;
   };
 
-  $('#new_message').on('submit', function(e){
+  $('.new_message').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr('action');
@@ -42,7 +42,7 @@ $(document).on('turbolinks:load', function() {
     .done(function(message){
       if(message.length == 0)
       {
-        alert('error2');
+        alert('error');
       }
       else {
         var html = buildMessageHTML(message);
@@ -52,7 +52,7 @@ $(document).on('turbolinks:load', function() {
       }
     })
     .fail(function(){
-      alert('error2');
+      alert('error');
     });
     return false;
   });
