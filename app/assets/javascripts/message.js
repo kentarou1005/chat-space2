@@ -40,7 +40,7 @@ $(document).on('turbolinks:load', function() {
     })
 
     .done(function(message){
-      if(message.length == 0)
+      if(message == "")
       {
         alert('error');
       }
