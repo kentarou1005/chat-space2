@@ -40,10 +40,15 @@ $(document).on('turbolinks:load', function() {
     })
 
     .done(function(message){
-      var html = buildMessageHTML(message);
-      $(".messages").append(html);
-      $("form")[0].reset();
-      $(".messages").animate({scrollTop: $(".message").last().offset().top + $('.messages').scrollTop()}, 500, "swing");
+      if(message == ""){
+        $("form").prop("disabled", false);
+      }
+      else {
+        var html = buildMessageHTML(message);
+        $(".messages").append(html);
+        $("form")[0].reset();
+        $(".messages").animate({scrollTop: $(".message").last().offset().top + $('.messages').scrollTop()}, 500, "swing");
+      }
     })
     .fail(function(){
       alert('error2');
@@ -68,16 +73,15 @@ $(document).on('turbolinks:load', function() {
                     });
                 $(".form__submit")[0].reset();
                 $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, "fast");
-            }
-            else{
-            }
+          }
+        else{
+          }
         })
       .fail(function(){
       });
       return false;
     };
   setInterval(reloadMessages, 3000);
-
 });
 
 
