@@ -72,10 +72,10 @@ $(document).on('turbolinks:load', function() {
               messages.forEach(function (message) {
                 insertHTML = buildMessageHTML(message); 
                 $('.messages').append(insertHTML);
-                    });
                 $(".form__submit")[0].reset();
+              });
                 $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, "fast");
-          }
+              }
         else{
           }
         })
