@@ -41,7 +41,7 @@ $(document).on('turbolinks:load', function() {
 
     .done(function(message){
       if(message == ""){
-        $(".form__submit").prop("disabled", true);
+        $(".form__submit").attr("disabled", true);
       }
       else {
         var html = buildMessageHTML(message);
