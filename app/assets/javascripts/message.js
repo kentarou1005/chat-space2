@@ -48,11 +48,12 @@ $(document).on('turbolinks:load', function() {
         console.log(111);
         var html = buildMessageHTML(message);
         $(".messages").append(html);
+        $('.form__message').val('');
         $("form")[0].reset();
         $(".messages").animate({scrollTop: $(".message").last().offset().top + $('.messages').scrollTop()}, 500, "swing");
       }
     })
-    .fail(function(){
+    .fail(function(message){
       alert('error');
     });
     return false;
