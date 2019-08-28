@@ -42,7 +42,7 @@ $(document).on('turbolinks:load', function() {
     .done(function(message){
       if(message == "")
       {
-        alert('error');
+        alert(else);
       }
       else {
         console.log(111);
@@ -53,7 +53,7 @@ $(document).on('turbolinks:load', function() {
         $(".messages").animate({scrollTop: $(".message").last().offset().top + $('.messages').scrollTop()}, 500, "swing");
       }
     })
-    .fail(function(message){
+    .fail(function(){
       alert('error');
     });
     return false;
