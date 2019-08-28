@@ -42,19 +42,20 @@ $(document).on('turbolinks:load', function() {
     .done(function(message){
       if(message == "")
       {
-        alert(else);
+        alert("error1");
       }
       else {
         console.log(111);
         var html = buildMessageHTML(message);
         $(".messages").append(html);
         $('.form__message').val('');
+        console.log(this)
         $("form")[0].reset();
         $(".messages").animate({scrollTop: $(".message").last().offset().top + $('.messages').scrollTop()}, 500, "swing");
       }
     })
     .fail(function(){
-      alert('error');
+      alert('error2');
     });
     return false;
   });
