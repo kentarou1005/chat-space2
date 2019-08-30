@@ -40,22 +40,14 @@ $(document).on('turbolinks:load', function() {
     })
 
     .done(function(message){
-      if(message == "")
-      {
-        alert("error1");
-      }
-      else {
-        console.log(111);
-        var html = buildMessageHTML(message);
-        $(".messages").append(html);
-        $('.form__message').val('');
-        console.log(this)
-        $("form")[0].reset();
-        $(".messages").animate({scrollTop: $(".message").last().offset().top + $('.messages').scrollTop()}, 500, "swing");
-      }
+      var html = buildMessageHTML(message);
+      $(".messages").append(html);
+      $('.form__message').val('');
+      $("form")[0].reset();
+      $(".messages").animate({scrollTop: $(".message").last().offset().top + $('.messages').scrollTop()}, 500, "swing");
     })
     .fail(function(){
-      alert('error2');
+      alert('メッセージを入力してください');
     });
     return false;
   });
@@ -74,9 +66,9 @@ $(document).on('turbolinks:load', function() {
               messages.forEach(function (message) {
                 insertHTML = buildMessageHTML(message); 
                 $('.messages').append(insertHTML);
-                $(".form__submit")[0].reset();
+                $("form")[0].reset();
               });
-                $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, "fast");
+                $('.messages').animate({scrollTop: $('.messages')[0]}, "fast");
               }
         else{
           }
@@ -85,7 +77,7 @@ $(document).on('turbolinks:load', function() {
       });
       return false;
     };
-  setInterval(reloadMessages, 3000);
+  setInterval(reloadMessages, 6000);
 });
 
 
