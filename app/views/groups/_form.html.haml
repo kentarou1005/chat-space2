@@ -23,11 +23,9 @@
       %label.chat-group-form__label チャットメンバー
     .chat-group-form__field--right
 
-
       .chat-group-users.js-add-user
         - @group.group_users.each do |group_user|
           .chat-group-user.clearfix.js-chat-member
-            -# %input{name: "group[user_ids][]", type: "hidden", id: "group_user_ids", value: group_user.id}/
             %input{name: "group[user_ids][]", type: "hidden", value: current_user.id}/
             =  group_user.user.name
             .user-search-remove.chat-group-user__btn.chat-group-user__btn--remove.js-remove-btn 削除
