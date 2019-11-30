@@ -34,7 +34,7 @@
 ### Association
 - belongs_to :user
 - belongs_to :group
-
+i
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
